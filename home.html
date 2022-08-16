@@ -1,0 +1,2307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet"> -->
+<link href="https://fonts.googleapis.com/css2?family=Crete+Round&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato|Nanum+Gothic:700|Raleway&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="StyleiTechFooter.css">
+<link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="assets/vendors/animate/animate.min.css" />
+<link rel="stylesheet" href="assets/vendors/fontawesome/css/all.min.css" />
+<link rel="stylesheet" href="assets/vendors/jarallax/jarallax.css" />
+<link rel="stylesheet" href="assets/vendors/jquery-magnific-popup/jquery.magnific-popup.css" />
+<link rel="stylesheet" href="assets/vendors/nouislider/nouislider.min.css" />
+<link rel="stylesheet" href="assets/vendors/nouislider/nouislider.pips.css" />
+<link rel="stylesheet" href="assets/vendors/odometer/odometer.min.css" />
+<link rel="stylesheet" href="assets/vendors/swiper/swiper.min.css" />
+<link rel="stylesheet" href="assets/vendors/moniz-icons/style.css">
+<link rel="stylesheet" href="assets/vendors/tiny-slider/tiny-slider.min.css" />
+<link rel="stylesheet" href="assets/vendors/reey-font/stylesheet.css" />
+<link rel="stylesheet" href="assets/vendors/owl-carousel/owl.carousel.min.css" />
+<link rel="stylesheet" href="assets/vendors/owl-carousel/owl.theme.default.min.css" />
+<link rel="stylesheet" href="assets/vendors/twentytwenty/twentytwenty.css" />
+<link rel="stylesheet" href="assets/vendors/bxslider/jquery.bxslider.css" />
+<link rel="stylesheet" href="assets/vendors/bootstrap-select/css/bootstrap-select.min.css" />
+<link rel="stylesheet" href="assets/vendors/vegas/vegas.min.css" />
+<link rel="stylesheet" href="assets/vendors/jquery-ui/jquery-ui.css" />
+<link rel="stylesheet" href="assets/vendors/timepicker/timePicker.css" />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://md-aqil.github.io/images/swiper.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap" rel="stylesheet">
+    <title>Agent Rise</title>
+</head>
+<style>
+    html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+
+    /* font-family: "Quicksand", sans-serif; */
+    font-size: 62.5%;
+    font-size: 10px;
+}
+
+.nav {
+    width: 100%;
+    height: 65px;
+    position: fixed;
+    line-height: 65px;
+    text-align: center;
+}
+
+.nav div.logo {
+    float: left;
+    width: auto;
+    height: auto;
+    padding-left: 3rem;
+}
+
+.nav div.logo a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.nav div.logo a:hover {
+    color: #00E676;
+}
+
+.nav div.main_list {
+    height: 65px;
+    float: right;
+}
+
+.nav div.main_list ul {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+   
+}
+
+.nav div.main_list ul li {
+    width: auto;
+    height: 65px;
+    padding: 0;
+    padding-right: 3rem;
+}
+
+.nav div.main_list ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    line-height: 65px;
+    font-size: 2.4rem;
+
+}
+
+.nav div.main_list ul li a:hover {
+    color: #06a8ad;
+}
+.home {
+    width: 100%;
+    height: 100vh;
+     background-image: url('22.jpg');
+     background-position: center top;
+     animation: zoom-in-zoom-out 2s ease-in;
+	background-size:cover; 
+
+  
+    /* background-image: url('r33.png') ;  */ 
+   
+    /* background-color: black */
+  
+}
+
+.navTrigger {
+    display: none;
+}
+
+.nav {
+
+    padding-bottom: 20px;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+
+/* Media qurey section */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .navTrigger {
+        display: block;
+    }
+    .nav div.logo {
+        margin-left: 15px;
+    }
+    .nav div.main_list {
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+    }
+    .nav div.show_list {
+        height: auto;
+        display: none;
+    }
+    .nav div.main_list ul {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        color: rgb(255, 255, 255);
+        background-color: rgb(0, 0, 0);
+        /*same background color of navbar*/
+        background-position: center top;
+    }
+    .nav div.main_list ul li {
+        width: 100%;
+        text-align: right;
+    }
+    .nav div.main_list ul li a {
+        text-align: center;
+        width: 100%;
+        /* font-size: 3rem;
+        padding: 20px; */
+    }
+    .nav div.media_button {
+        display: block;
+    }
+}
+.wrapper{
+    width: 100%;
+    height: 65px;
+    position: relative;
+    margin: auto;
+    background: #000;
+    overflow: hidden;
+    bottom: 50%;
+    color: white;
+}
+.box {
+    height:65px;
+    position:absolute;
+    background:transparent;
+    font-size: 30px;
+    line-height:65px;
+    text-align:center;
+    color: #fff;
+    text-transform: uppercase;
+}
+.boxes {
+    position:relative;
+}
+
+/* Animation */
+/* Inspiration taken from Dicson https://codemyui.com/simple-hamburger-menu-x-mark-animation/ */
+
+.navTrigger {
+    cursor: pointer;
+    width: 30px;
+    height: 25px;
+    margin: auto;
+    position: absolute;
+    right: 30px;
+    top: 0;
+    bottom: 0;
+}
+
+.navTrigger i {
+    background-color: rgb(255, 255, 255);
+    border-radius: 2px;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+}
+
+.navTrigger i:nth-child(1) {
+    -webkit-animation: outT 0.8s backwards;
+    animation: outT 0.8s backwards;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+}
+
+.navTrigger i:nth-child(2) {
+    margin: 5px 0;
+    -webkit-animation: outM 0.8s backwards;
+    animation: outM 0.8s backwards;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+}
+
+.navTrigger i:nth-child(3) {
+    -webkit-animation: outBtm 0.8s backwards;
+    animation: outBtm 0.8s backwards;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+}
+
+.navTrigger.active i:nth-child(1) {
+    -webkit-animation: inT 0.8s forwards;
+    animation: inT 0.8s forwards;
+}
+
+.navTrigger.active i:nth-child(2) {
+    -webkit-animation: inM 0.8s forwards;
+    animation: inM 0.8s forwards;
+}
+
+.navTrigger.active i:nth-child(3) {
+    -webkit-animation: inBtm 0.8s forwards;
+    animation: inBtm 0.8s forwards;
+}
+
+@-webkit-keyframes inM {
+    50% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(45deg);
+    }
+}
+
+@keyframes inM {
+    50% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(45deg);
+    }
+}
+
+@-webkit-keyframes outM {
+    50% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {                                                      
+        -webkit-transform: rotate(45deg);
+    }
+}
+
+@keyframes outM {
+    50% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(45deg);
+    }
+}
+
+@-webkit-keyframes inT {
+    0% {
+        -webkit-transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        -webkit-transform: translateY(9px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: translateY(9px) rotate(135deg);
+    }
+}
+
+@keyframes inT {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(9px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(9px) rotate(135deg);
+    }
+}
+
+@-webkit-keyframes outT {
+    0% {
+        -webkit-transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        -webkit-transform: translateY(9px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: translateY(9px) rotate(135deg);
+    }
+}
+
+@keyframes outT {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(9px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(9px) rotate(135deg);
+    }
+}
+
+@-webkit-keyframes inBtm {
+    0% {
+        -webkit-transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        -webkit-transform: translateY(-9px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: translateY(-9px) rotate(135deg);
+    }
+}
+
+@keyframes inBtm {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-9px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(-9px) rotate(135deg);
+    }
+}
+
+@-webkit-keyframes outBtm {
+    0% {
+        -webkit-transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        -webkit-transform: translateY(-9px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: translateY(-9px) rotate(135deg);
+    }
+}
+
+@keyframes outBtm {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-9px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(-9px) rotate(135deg);
+    }
+}
+
+.affix {
+    padding: 0;
+    background-color: #111;
+}
+
+
+
+
+
+
+.myH2 {
+    padding-top: 10px;
+	text-align:left;
+	font-size: 105px;
+    /* font-family: 'Quicksand', sans-serif; */
+    font-family: 'Crete Round', serif;
+    padding-left: 38px;
+}
+.myP {
+	text-align: justify;
+	padding-left:15%;
+	padding-right:15%;
+	font-size: 20px;
+}
+@media all and (max-width:700px){
+	.myP {
+		padding:2%;
+	}
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  /* background: #00b09b; */
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  /* background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#96c93d),
+    to(#00b09b)
+  ); */
+  /* background: linear-gradient(to right, #96c93d, #00b09b); */
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 4px 16px;
+}
+
+#cards-container {
+  overflow: hidden;
+  margin: 20px;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 99999px;
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  width: 235px;
+  margin: 15px 7.5px;
+}
+
+.card:hover {
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.card .img {
+  max-width: 220px;
+  height: 220px;
+  display: inline-block;
+}
+
+#slide-left-container,
+#slide-right-container {
+  display: none;
+}
+
+#slide-left-container.active,
+#slide-right-container.active {
+  display: block;
+  cursor: pointer;
+}
+
+.slide-left,
+.slide-right {
+  border-color: rgb(0, 0, 0);
+  border-style: solid;
+  height: 20px;
+  width: 20px;
+  margin-top: 30%;
+}
+
+.slide-left {
+  border-width: 4px 0 0 4px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  margin-left: 40%;
+}
+
+.slide-right {
+  border-width: 4px 4px 0 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  margin-left: 22%;
+}
+.slide-right:hover{
+    border-color:rgb(255, 145, 0);
+}
+.slide-left:hover{
+    border-color:rgb(255, 145, 0);
+}
+footer {
+    /* background-color: #02374d; */
+    padding: 3em 4em 2em;
+    font-size: 18px;
+    background-image: url('footer11.jpg') ;
+    background-size: cover;
+   /* background-color: black; */
+
+}
+
+
+    footer .logo {
+        color:#fff;
+        font-size: 28px;
+        font-family: roboto;
+    }
+
+    footer .row {
+        margin: 2em 0;
+        font-family: lato;
+        color: rgb(255, 255, 255);
+        position: relative;
+        border-bottom: 1px solid #cecece;
+    }
+    
+    .footer-toggle {
+        display: none;
+    }
+
+    .link-cat {
+        cursor:pointer;
+    }
+    
+    footer ul {
+        padding:0;
+        -webkit-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;        
+    }
+
+        footer ul li {
+            list-style-type: none;
+            padding:0;            
+            -webkit-transition: all .5s ease-in-out;            
+            transition: all .5s ease-in-out;
+            line-height: 2;            
+        }  
+
+        footer .footer-cat, #newsletter span {
+            font-size: 20px;
+        }
+
+        .footer-cat-links a {
+            color: #ffffff;
+            text-decoration: none;
+            position: relative;
+        }
+
+        .footer-cat-links.active > li a {
+            pointer-events: auto;
+        }
+
+        .footer-cat-links a:after {
+            top: 21px;
+            content: "";
+            display: block;
+            height: 2px;
+            left: 50%;
+            position: absolute;
+            width: 0;
+            background: rgb(255, 136, 0);
+            
+            -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+            transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        }
+
+        .footer-cat-links a:hover:after, .footer-cat-links a:focus:after {
+            width: 100%;
+            left: 0;
+            color: rgb(255, 255, 255);
+        }
+
+        footer #subscribe {
+            margin: 20px 0px 30px;
+        }
+
+        input#subscriber-email {
+            outline: none;
+            padding: 8px;
+            background: #ffffff;
+            border: 1px solid #cecece;
+            color: #000000;
+            border-radius: 4px 0px 0px 4px;
+        }
+
+        input#subscriber-email::-webkit-input-placeholder {
+            color:rgb(233, 233, 233);
+        }
+
+        input#subscriber-email:-ms-input-placeholder {
+            color:#cecece;
+        }
+
+        input#subscriber-email::-ms-input-placeholder {
+            color:#cecece;
+        }
+
+        input#subscriber-email::placeholder {
+            color:#cecece;
+        }
+
+    .col-3 {
+        display: inline-table;
+        width:25%;
+
+    }
+
+    .col-3#newsletter {
+        width:24%
+    }
+
+    .col-3#newsletter #btn-scribe {
+        margin-left: -4px;
+        border: 1px solid #cecece;
+        border-radius: 0px 4px 4px 0;
+        padding: 8px 5px;
+        background-color: #ff6600;
+        color: #ffffff;
+        cursor: pointer;
+    }
+    .col-3#newsletter#btn-scribe:hover{
+        background-color: rgb(235, 152, 0);
+        color: white;
+    }
+
+    .social-2 {
+        display: none;
+    }
+
+    .social-links {
+        bottom: 44px;
+        position: absolute;
+        left: 0;
+    }
+    
+        .social-links a {
+            color: #fff;
+            font-size: 20px;
+            border: 1px solid;
+            border-radius: 20px;
+            padding: 6px;
+
+            -webkit-transition:all .2s ease-in;
+            transition:all .2s ease-in;
+        }
+
+        .social-links a:not(:last-child) {
+            margin-right: 10px;
+        }
+
+        .social-links a:hover, .social-links a:focus {
+            background-color: #ff7300;
+            color: rgb(255, 255, 255);
+        }
+
+            .social-links a i {
+                width: 25px;
+                height: 25px;
+                text-align:center;
+            }
+
+            #newsletter #address li:not(:first-child) {
+                padding: 20px 0;
+            }
+        
+                #newsletter #address li i {
+                    font-size: 45px;
+                    width: auto;
+                    padding: 5px;
+                }
+
+                    #newsletter #address li div {
+                        color: #cecece;
+                        font-size: 14px;
+                        width: 80%;
+                        text-align: left;
+                        float: right;
+                        line-height: 1.3;
+                    }
+
+    #copyright {
+        text-align: center;
+        color:#fff;
+        font-family: lato;
+    }
+
+#owner {
+    text-align: center;
+    padding: 20px 0 0px;
+    color: #fff;
+    font-family: lato;
+}
+
+    #owner a {
+        color:#fff;        
+    }
+
+/* iPads to Smartphone for Common Elements ----------- */  
+@media only screen and (max-width : 1024px) {    
+
+    .col-3 {
+        display: block;
+        width: 100%;
+        padding-bottom: 1em;
+        position: relative;
+    }
+
+    .col-3#newsletter {
+        width: 100%;
+        position: relative;
+        padding-bottom: 0;
+        padding-top: 1em;
+    }    
+        
+    footer .footer-cat {
+        margin-left: 25px;
+    }
+     
+    .footer-toggle,.footer-toggle::after {
+        background: #fff;
+        height: 2px;
+        width: 15px;
+        position: absolute;
+        display: block;
+        -webkit-transition:all .4s ease-in;
+        transition:all .4s ease-in;
+    }
+
+    .footer-toggle {        
+        top: 11px;
+        cursor:pointer;
+    }
+
+    .footer-toggle::after {
+        content: '';
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+    }
+
+    .btnActive .footer-toggle::after {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    .footer-cat-links {
+        margin: 0 0em 0px 1.6em;
+    }
+
+        .footer-cat-links a {
+            pointer-events: none;
+        }
+    
+    .footer-cat-links li {
+        line-height: 0;
+        opacity: 0;
+    }
+
+    .footer-cat-links.active > li{
+        line-height:2;
+        opacity:1;
+    }
+
+    .social-1 {
+        display: none !important;
+    }
+
+    .social-2 {
+        display: block;
+        position: absolute;
+        top: 7.5em;
+        bottom: 0px;
+        height:20px;
+        padding-bottom: 1.5em;
+        width: 100%;
+    }
+
+    #address {
+        margin-top: 6em;
+    }
+
+    #newsletter #address li i {
+        width: auto;
+    }
+
+    #newsletter #address li div {
+        font-size: 14px;
+        width: auto;
+        text-align: -webkit-auto;
+        float: none;
+        line-height: 2;
+        display: inline-block;
+        padding: 10px 0 15px;
+    }
+
+    #newsletter #address li div:last-child {
+        padding-bottom: 0;
+    }
+
+    #newsletter #address li:not(:first-child) {
+        padding: 20px 0 0;
+    }
+}
+
+/* iPads (portrait)----------- */  
+@media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : portrait) {
+    
+    footer {
+        padding-right:3em;
+        padding-left:3em;
+    }
+
+    .col-3 {
+        display: block;
+        width: 100%;
+        padding-bottom: 1em;
+    }
+}
+
+/* iPads (landscape) ----------- */  
+@media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : landscape) {  
+    
+    section {
+        padding-bottom: 3em;
+    }
+
+    .sec-heading {
+        padding:1em 0;
+    }
+    
+    .col-3 {
+        display: block;
+        width: 100%;
+        padding-bottom: 1em;
+    }
+}
+
+/* Mini Tablet ----------- */  
+@media only screen and (max-width : 600px) {  
+    
+    .col-3 {
+        display: block;
+        width: 100%;
+        padding-bottom: 1em;
+    }
+
+    .col-6 {
+        width: 100%;
+        display: block;
+    }
+    
+    footer {
+        padding: 3em 2em 2em;
+    }
+}
+
+/* Smartphones (portrait and landscape) ----------- */  
+@media only screen and (max-width : 480px) {  
+
+    .col-6 {
+        width: 100%;
+        display: block;
+    }
+    
+    footer {
+        padding-right: 1em;
+        padding-left: 1em;
+    }
+}
+.zoom-in-zoom-out {
+ animation: zoom-in-zoom-out 2s ease-in;
+  
+}
+
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.1, 1.1);
+  }
+  /* 100% {
+    transform: scale(1, 1);
+  } */
+}
+body {
+			margin: 0;
+			padding: 0;
+			font-family: 'Lato', sans-serif;
+
+		}
+		:root {
+			--dark-green: #9cc675;
+      --dark-yellow: #e89a3d;
+      --extra-light-brown:#fdf0d7;
+      --light-brown: #ecd5ab;
+      --dark-brown:#915b40;
+      --light-yellow:#f8e3a8;
+      --light-red:#f3ac99;
+      --light-teal:#a6c8cc;
+      --light-gray:#ddd5d6;
+			--theme-color2: #e89a3d;
+		}
+
+
+ .site-logo {
+	 width: 218.33px !important;
+	 margin-right: 50px;
+}
+ .btn {
+	 border-radius: 5px;
+	 font-weight: normal;
+	 font-size: 15px;
+	 letter-spacing: 0.02em;
+	 line-height: 12px;
+	 text-align: center;
+	 font-weight: 600;
+	 font-size: 14px;
+	 padding: 14px 30px;
+	 cursor: pointer;
+}
+ .btn-theme {
+	 background: var(--theme-color1);
+	 color: #212121;
+}
+a{
+  color: black;
+}
+.c-container {
+    margin: auto;
+    width: 93%;
+    position: relative;
+    z-index: 1;
+}
+
+.btn-outline-white {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+    background-image: none;
+    border-width: 2px;
+    border-color: #fff;
+    font-weight: 500;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+}
+.btn {
+    border-radius: 5px;
+    font-weight: normal;
+    font-size: 15px;
+    letter-spacing: 0.02em;
+    line-height: 12px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 14px 30px;
+    cursor: pointer;
+}
+.btn-outline-white:hover {
+    background-color: #fff;
+    color: var(--text-dark);
+}
+/* common css up */
+
+.testimonial p {
+	 font-size: 28px;
+	 letter-spacing: 0.02em;
+	 line-height: 35px;
+}
+ .testimonial .name {
+	 font-weight: bold;
+	 font-size: 18px;
+	 letter-spacing: 0.04em;
+	 line-height: 35px;
+	 text-align: left;
+}
+ .testimonial .designation {
+	 font-size: 14px;
+	 letter-spacing: 0.04em;
+	 text-align: left;
+	 color: #fff;
+	 opacity: 0.65;
+}
+ .unt {
+	 margin-bottom: 20px;
+	 margin-top: 60px;
+}
+ .hero-text {
+	 font-size: 30px;
+	 letter-spacing: 0.02em;
+	 color: #fff;
+}
+ .gallery-thumbs {
+	 height: 100%;
+}
+ .gallery-thumbs .swiper-wrapper {
+	 align-items: center;
+}
+ .gallery-thumbs .swiper-slide {
+	 background-position: center;
+	 background-size: cover;
+	 width: 250px !important;
+	 height: 330px;
+	 position: relative;
+}
+ .gallery-thumbs .swiper-slide img {
+	 filter: contrast(0.5) blur(1px);
+	 width: 100%;
+	 height: 100%;
+	 object-fit: cover;
+	 border-radius: 10px;
+}
+ .gallery-thumbs .swiper-slide-active img {
+	 filter: contrast(1) blur(0px) !important;
+}
+ .flex-row {
+	 display: -webkit-box;
+	 display: -ms-flexbox;
+	 display: flex;
+	 -ms-flex-wrap: wrap;
+	 flex-wrap: wrap;
+	 margin-right: -15px;
+	 margin-left: -15px;
+}
+ .flex-row .flex-col {
+	 -ms-flex-preferred-size: 0;
+	 flex-basis: 0;
+	 -webkit-box-flex: 1;
+	 -ms-flex-positive: 1;
+	 flex-grow: 1;
+	 max-width: 100%;
+	 position: relative;
+	 width: 100%;
+	 min-height: 1px;
+	 padding-right: 15px;
+	 padding-left: 15px;
+}
+
+.gallery-thumbs .swiper-wrapper {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+
+.testimonial-section .quote {
+    width: 75%;
+    background-color: #000;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.swiper-container.testimonial {
+    height: 100vh;
+}
+.testimonial-section .user-saying {
+    background: var(--theme-color2);
+    width: 60%;
+    color: #fff;
+    height: 100%;
+}
+.testi-user-img {
+    width: 40%;
+}
+.testimonial-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+.testimonial-section .quote p {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.8;
+    font-style: italic;
+    margin: 0;
+}
+.quote-icon {
+    width: 38px;
+    display: block;
+    margin-bottom: 30px;
+}
+.box4{
+    padding-left: 35px;
+    
+  
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+
+h2{
+    font-size: 29px;
+    color: rgb(255, 123, 0);
+    text-align: center;
+}
+p{
+    font-size: 49px;
+    text-align: center;
+    line-height: 10px;
+}
+@keyframes example {
+  0%   { left:0px; top:0px;}
+  25%  { left:200px; top:0px;}
+}
+.box6{
+text-align: center;
+}
+h3{
+    font-size: 39px;
+}
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,500,700&subset=latin-ext");
+html {
+  position: relative;
+  overflow-x: hidden !important;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+.background {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+.background:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(45deg, rgba(209, 0, 42, 0.6) 0%, #0e5dc4 100%);
+  opacity: 0.9;
+}
+.background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+  user-select: none;
+}
+
+.item-bg {
+  width: 300px;
+  height: 500px;
+  position: absolute;
+  top: 30px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 6px 26px 6px rgba(0, 0, 0, 0.25);
+  opacity: 0;
+  transition: all 0.3s;
+  left: -30px;
+}
+.item-bg.active {
+  left: 0;
+  top: 0;
+  opacity: 1;
+}
+
+.news-slider {
+  z-index: 2;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+}
+@media screen and (max-width: 1300px) {
+  .news-slider {
+    max-width: 1000px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .news-slider {
+    margin-top: 45px;
+  }
+}
+.news-slider__wrp {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  z-index: 2;
+}
+.news-slider__item {
+  width: 400px;
+  flex-shrink: 0;
+}
+@media screen and (max-width: 992px) {
+  .news-slider__item {
+    width: 340px;
+  }
+}
+.news-slider__item.swiper-slide {
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+.news-slider__item.swiper-slide-active, .news-slider__item.swiper-slide-prev, .news-slider__item.swiper-slide-next {
+  opacity: 1;
+  pointer-events: auto;
+}
+.news-slider__ctr {
+  position: relative;
+  z-index: 12;
+}
+.news-slider__arrow {
+  background: #fff;
+  border: none;
+  display: inline-flex;
+  width: 50px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 6px 26px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  z-index: 12;
+  cursor: pointer;
+  outline: none !important;
+}
+.news-slider__arrow:focus {
+  outline: none !important;
+}
+.news-slider__arrow .icon-font {
+  display: inline-flex;
+}
+.news-slider__arrow.news-slider-prev {
+  left: 15px;
+  transform: translateY(-50%);
+}
+.news-slider__arrow.news-slider-next {
+  right: 15px;
+  transform: translateY(-50%);
+}
+.news-slider__pagination {
+  text-align: center;
+  margin-top: 50px;
+}
+.news-slider__pagination .swiper-pagination-bullet {
+  width: 13px;
+  height: 10px;
+  display: inline-block;
+  background: #fff;
+  opacity: 0.2;
+  margin: 0 5px;
+  border-radius: 20px;
+  transition: opacity 0.5s, background-color 0.5s, width 0.5s;
+  transition-delay: 0.5s, 0.5s, 0s;
+}
+.news-slider__pagination .swiper-pagination-bullet-active {
+  opacity: 1;
+  background: #ffffff;
+  width: 100px;
+  transition-delay: 0s;
+}
+@media screen and (max-width: 576px) {
+  .news-slider__pagination .swiper-pagination-bullet-active {
+    width: 70px;
+  }
+}
+.news__item {
+  padding: 40px;
+  color: #fff;
+  border-radius: 10px;
+  display: block;
+  transition: all 0.3s;
+}
+@media screen and (min-width: 800px) {
+  .news__item:hover {
+    color: #222222;
+    transition-delay: 0.1s;
+  }
+  .news__item:hover .news-date,
+.news__item:hover .news__title,
+.news__item:hover .news__txt {
+    opacity: 1;
+    transition-delay: 0.1s;
+  }
+  .news__item:hover .news__img {
+    box-shadow: none;
+  }
+}
+.news__item.active {
+  color: #222222;
+}
+.news__item.active .news-date,
+.news__item.active .news__title,
+.news__item.active .news__txt {
+  opacity: 1;
+}
+.news__item.active .news__img {
+  box-shadow: none;
+}
+@media screen and (max-width: 992px) {
+  .news__item {
+    padding: 30px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .news__item {
+    padding: 20px;
+  }
+}
+.news-date {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid;
+  display: inline-block;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+@media screen and (max-width: 576px) {
+  .news-date {
+    margin-bottom: 10px;
+    display: inline-flex;
+    align-items: center;
+    padding-bottom: 0;
+  }
+}
+.news-date__title {
+  display: block;
+  font-size: 32px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+@media screen and (max-width: 576px) {
+  .news-date__title {
+    margin-right: 10px;
+  }
+}
+.news-date__txt {
+  font-size: 16px;
+}
+.news__title {
+  font-size: 25px;
+  font-weight: 500;
+  opacity: 0.7;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  transition: opacity 0.3s;
+}
+@media screen and (max-width: 576px) {
+  .news__title {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+}
+.news__txt {
+  margin: 10px 0;
+  line-height: 1.6em;
+  font-size: 15px;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+.news__img {
+  border-radius: 10px;
+  box-shadow: 0 6px 26px 6px rgba(0, 0, 0, 0.25);
+  height: 200px;
+  margin-top: 30px;
+  width: 100%;
+  transition: all 0.3s;
+  transform-origin: 0% 0%;
+}
+@media screen and (max-width: 576px) {
+  .news__img {
+    height: 180px;
+    margin-top: 20px;
+  }
+}
+.news__img img {
+  max-width: 100%;
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+}
+</style>
+<body>
+    
+    <nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <a href="#">Your Logo</a>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="aboutus.html">About</a></li>
+                    <li><a href="join1.html">Join Our Team</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="contactus.html">Contact</a></li>
+                    <li><a href="register.html">Registeration</a></li>
+                    <li><a href="sign.html">Sign In</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+    <section class="home">
+        <br>
+        <br><br>
+        <br><br>
+        <br>
+        <br>
+        <div class="zoom-in-zoom-out">
+        <h1 style="color: rgb(255, 255, 255); font-size: 100px;  font-family: 'Playfair Display SC', serif;
+        letter-spacing: 12px; padding: 14px; padding-left: 25px;"><b>Agent <br><i>&nbsp;&nbsp;&nbsp;&nbsp; Rise</i></b></h1>
+        <!-- <h2 style="color: white;font-size: 150px;  font-family: 'Playfair Display SC', serif;
+        letter-spacing: 12px; padding-left: 178px; line-height: 1px;"><b>Rise</b></h2> -->
+    </section>
+</div>
+    <div class="box3">
+        <h1 style="text-align: center; font-size: 48px; font-family: 'Cormorant SC', serif; color: black;"><b>Our Professional Services</b></h1>
+          <div class="container">
+              <div id="slide-left-container">
+                <div class="slide-left">
+                </div>
+              </div>
+              <div id="cards-container">
+                <div class="cards">
+                  <div class="card">
+                    <img src="web1.jpg" alt="Animals" style="width: 235px;; height: 240px;">
+                    <div class="container">
+                      <h4>
+                        <a href="cardweb.html"> <b style="font-size: 20px; font-family: 'Cormorant SC', serif;">Web Development</b></a>
+                       
+                      </h4>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="game1.jpg" alt="Nature" style="width:100%; height: 240px;">
+                    <div class="container">
+                      <h4>
+                        <b style="font-size: 20px;font-family: 'Cormorant SC', serif;">Game Development</b>
+                      </h4>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="logo1.jpg" alt="Architecture" style="width:100%; height: 240px;">
+                    <div class="container">
+                      <h4>
+                        <b style="font-size: 20px;font-family: 'Cormorant SC', serif;">LOGO design</b>
+                      </h4>
+                    </div>
+                  </div>
+                  
+                  <div class="card">
+                    <img src="da.jpg" alt="People" style="width:100%; height: 240px;">
+                    <div class="container">
+                      <h4>
+                        <b style="font-size: 20px;font-family: 'Cormorant SC', serif;"> Data Entry</b>
+                      </h4>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="vi.jpg" alt="Animals" style="width:100%; height: 240px;">
+                    <div class="container">
+                      <h4>
+                        <b style="font-size: 20px;font-family: 'Cormorant SC', serif;" >Virtual Assistant</b>
+                      </h4>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="vo.jpg" alt="Nature" style="width:100%; height: 240px;">
+                    <div class="container">
+                      <h4>
+                        <b style="font-size: 20px;font-family: 'Cormorant SC', serif;">Voice Over</b>
+                      </h4>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="social1.jpg" alt="Technology" style="width:100%; height: 240px;">
+                    <div class="container">
+                      <h4>
+                        <b style="font-size: 20px;font-family: 'Cormorant SC', serif;">Social Media</b>
+                      </h4>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="cw.jpg" alt="Architecture" style="width:100%; height: 240px;">
+                    <div class="container">
+                      <h4>
+                        <b style="font-size: 20px; font-family: 'Cormorant SC', serif;">Content Writing</b>
+                      </h4>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="http://via.placeholder.com/220x220" alt="Technology" style="width:100%">
+                    <div class="container">
+                      <h4>
+                        <b style="font-size: 20px;">Technology</b>
+                      </h4>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="http://via.placeholder.com/220x220" alt="People" style="width:100%">
+                    <div class="container">
+                      <h4>
+                        <b style="font-size: 20px;">People</b>
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+         
+              <div id="slide-right-container">
+                <div class="slide-right" style="color: black;">
+                </div>
+              </div>
+          
+            </div>
+            <br>
+            <br>
+
+            <div class="box4">
+
+     
+            <h2>ABOUT US</h2>
+           <p> <b> WE CRAFT</b> </p> 
+           <p><b>SOLUTIONS </b></p>
+           <p><b>COMBINING</b></p>
+           <p><b> STRATEGY</b></p>
+<img src="about2.jpg" alt="" style="height: 450px; width:350px; float: left; padding-left: 55px;">
+<img src="about1.jpg" alt=""style="height: 450px; width:350px; float: left;">
+<img src="about3.jpg" alt=""style="height: 450px; width:350px; float: left;">
+        </div>
+    
+    
+        <br>
+            <section class="spacer">
+			
+				<div class="testimonial-section">
+					<div class="testi-user-img">
+					<div class="swiper-container gallery-thumbs">
+						  <div class="swiper-wrapper">
+								  <div class="swiper-slide">
+										<img class="u3" src="https://md-aqil.github.io/images/2091127763_1_1_1.jpg" alt="">
+									</div>
+						  <div class="swiper-slide">
+							  <img class="u1" src="https://md-aqil.github.io/images/beautiful-beauty-face-2657838.jpg" alt="">
+						  </div>
+						  <div class="swiper-slide">
+						  <img class="u2" src="https://md-aqil.github.io/images/attractive-beautiful-beauty-1986684.jpg" alt="">
+						  </div>
+					  
+						  <div class="swiper-slide">
+						  <img class="u4" src="https://md-aqil.github.io/images/beautiful-beauty-face-2657838.jpg" alt="">
+						  </div>
+						  
+						  </div>
+					  </div>
+					</div>
+					<div class="user-saying">
+						  <div class="swiper-container testimonial">
+								  <!-- Additional required wrapper -->
+								  <div class="swiper-wrapper ">
+									  <!-- Slides -->
+									  <div class="swiper-slide">
+										  <div class="quote">
+												  <img class="quote-icon" src="https://md-aqil.github.io/images/quote.png" alt="">
+											  <p>
+													  “This is best and biggest unified platform
+											  for instant online admission. We can easily
+											  take admission for any course in any institute..“
+											  </p>
+											  <div class="name">-Ramkishor Verma-</div>
+											  <div class="designation">University Student</div>
+											  
+										  </div>
+									  </div>
+									  <div class="swiper-slide">
+										  <div class="quote">
+												<img class="quote-icon" src="https://md-aqil.github.io/images/quote.png" alt="">
+											
+											  <p>
+													  “bnnbnbnnnbv
+											  take admission for any course in any institute..“
+											  </p>
+											  <div class="name">-Ramkishor Verma-</div>
+											  <div class="designation">University Student</div>
+											  
+										  </div>
+									  </div>
+									  <div class="swiper-slide">
+										  <div class="quote">
+												<img class="quote-icon" src="https://md-aqil.github.io/images/quote.png" alt="">
+												  
+											  <p>
+													  “This is best and biggest unified platform
+											  for instant online admission. We can easily
+											  take admission for any course in any institute..“
+											  </p>
+											  <div class="name">-Ramkishor Verma-</div>
+											  <div class="designation">University Student</div>
+											  
+										  </div>
+									  </div>
+									  <div class="swiper-slide">
+											  <div class="quote">
+													<img class="quote-icon" src="https://md-aqil.github.io/images/quote.png" alt="">
+												 
+												  <p>
+														  “This is best and biggest unified platform
+												  for instant online admission. We can easily
+												  take admission for any course in any institute..“
+												  </p>
+												  <div class="name">-Ramkishor Verma-</div>
+												  <div class="designation">University Student</div>
+												  
+											  </div>
+										  </div>
+									  
+								  </div>
+								  <!-- If we need pagination -->
+								  <div class="swiper-pagination swiper-pagination-white"></div>
+							  
+							  </div>
+					</div>
+				</div>
+			</section>
+	<script src="https://md-aqil.github.io/images/swiper.min.js"></script>
+                   <div class="box6" >
+                    <h2>Contact</h2>
+                    <h3>GET IN TOUCH</h3>
+                    <!-- <div class="wrapper">
+                        <div class="background">
+                          <img src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1537132206/news-slider/background.webp" alt="">
+                        </div>
+                        <div class="item-bg"></div>
+                      
+                        <div class="news-slider">
+                          <div class="news-slider__wrp swiper-wrapper">
+                            <div class="news-slider__item swiper-slide">
+                              <a href="#" class="news__item">
+                                <div class="news-date">
+                                  <span class="news-date__title">24</span>
+                                  <span class="news-date__txt">May</span>
+                                </div>
+                                <div class="news__title">
+                                  Lorem Ipsum Dolor Sit Amed
+                                </div>
+                      
+                                <p class="news__txt">
+                                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...
+                                </p>
+                      
+                                <div class="news__img">
+                                  <img src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1537132205/news-slider/item-2.webp" alt="news">
+                                </div>
+                              </a>
+                            </div>
+                      
+                            <div class="news-slider__item swiper-slide">
+                              <a href="#" class="news__item">
+                                <div class="news-date">
+                                  <span class="news-date__title">25</span>
+                                  <span class="news-date__txt">May</span>
+                                </div>
+                                <div class="news__title">
+                                  Lorem Ipsum Dolor Sit Amed
+                                </div>
+                      
+                                <p class="news__txt">
+                                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...
+                                </p>
+                      
+                                <div class="news__img">
+                                  <img src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1537132205/news-slider/item-3.webp" alt="news">
+                                </div>
+                              </a>
+                            </div>
+                      
+                            <div class="news-slider__item swiper-slide">
+                              <a href="#" class="news__item">
+                                <div class="news-date">
+                                  <span class="news-date__title">26</span>
+                                  <span class="news-date__txt">May</span>
+                                </div>
+                                <div class="news__title">
+                                  Lorem Ipsum Dolor Sit Amed
+                                </div>
+                      
+                                <p class="news__txt">
+                                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...
+                                </p>
+                      
+                                <div class="news__img">
+                                  <img src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1537132205/news-slider/item-4.webp" alt="news">
+                                </div>
+                              </a>
+                            </div>
+                      
+                            <div class="news-slider__item swiper-slide">
+                              <a href="#" class="news__item">
+                                <div class="news-date">
+                                  <span class="news-date__title">27</span>
+                                  <span class="news-date__txt">May</span>
+                                </div>
+                                <div class="news__title">
+                                  Lorem Ipsum Dolor Sit Amed
+                                </div>
+                      
+                                <p class="news__txt">
+                                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...
+                                </p>
+                      
+                                <div class="news__img">
+                                  <img src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1537132205/news-slider/item-2.webp" alt="news">
+                                </div>
+                              </a>
+                            </div>
+                      
+                            <div class="news-slider__item swiper-slide">
+                              <a href="#" class="news__item">
+                                <div class="news-date">
+                                  <span class="news-date__title">28</span>
+                                  <span class="news-date__txt">May</span>
+                                </div>
+                                <div class="news__title">
+                                  Lorem Ipsum Dolor Sit Amed
+                                </div>
+                      
+                                <p class="news__txt">
+                                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...
+                                </p>
+                      
+                                <div class="news__img">
+                                  <img src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1537132205/news-slider/item-5.webp" alt="news">
+                                </div>
+                              </a>
+                            </div>
+                      
+                            <div class="news-slider__item swiper-slide">
+                              <a href="#" class="news__item">
+                                <div class="news-date">
+                                  <span class="news-date__title">29</span>
+                                  <span class="news-date__txt">May</span>
+                                </div>
+                                <div class="news__title">
+                                  Lorem Ipsum Dolor Sit Amed
+                                </div>
+                      
+                                <p class="news__txt">
+                                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...
+                                </p>
+                      
+                                <div class="news__img">
+                                  <img src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1537132205/news-slider/item-4.webp" alt="news">
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                      
+                          <div class="news-slider__ctr">
+                      
+                            <div class="news-slider__arrows">
+                              <button class="news-slider__arrow news-slider-prev">
+                                <span class="icon-font">
+                                  <svg class="icon icon-arrow-left"><use xlink:href="#icon-arrow-left"></use></svg>
+                                </span>
+                              </button>
+                              <button class="news-slider__arrow news-slider-next">
+                                <span class="icon-font">
+                                  <svg class="icon icon-arrow-right"><use xlink:href="#icon-arrow-right"></use></svg>
+                                </span>
+                              </button>
+                            </div>
+                      
+                            <div class="news-slider__pagination"></div>
+                      
+                          </div>
+                      
+                        </div>
+                      
+                      </div>
+                      
+                      <svg hidden="hidden">
+                        <defs>
+                          <symbol id="icon-arrow-left" viewBox="0 0 32 32">
+                            <title>arrow-left</title>
+                            <path d="M0.704 17.696l9.856 9.856c0.896 0.896 2.432 0.896 3.328 0s0.896-2.432 0-3.328l-5.792-5.856h21.568c1.312 0 2.368-1.056 2.368-2.368s-1.056-2.368-2.368-2.368h-21.568l5.824-5.824c0.896-0.896 0.896-2.432 0-3.328-0.48-0.48-1.088-0.704-1.696-0.704s-1.216 0.224-1.696 0.704l-9.824 9.824c-0.448 0.448-0.704 1.056-0.704 1.696s0.224 1.248 0.704 1.696z"></path>
+                          </symbol>
+                          <symbol id="icon-arrow-right" viewBox="0 0 32 32">
+                            <title>arrow-right</title>
+                            <path d="M31.296 14.336l-9.888-9.888c-0.896-0.896-2.432-0.896-3.328 0s-0.896 2.432 0 3.328l5.824 5.856h-21.536c-1.312 0-2.368 1.056-2.368 2.368s1.056 2.368 2.368 2.368h21.568l-5.856 5.824c-0.896 0.896-0.896 2.432 0 3.328 0.48 0.48 1.088 0.704 1.696 0.704s1.216-0.224 1.696-0.704l9.824-9.824c0.448-0.448 0.704-1.056 0.704-1.696s-0.224-1.248-0.704-1.664z"></path>
+                          </symbol>
+                        </defs>
+                      </svg>
+                   </div>  -->
+    <footer>
+        <div>
+             <span class="logo">Agent Rise</span>
+        </div>
+ 
+        <div class="row">
+             <div class="col-3">                
+                 <div class="link-cat" onclick="footerToggle(this)">
+                     <span class="footer-toggle"></span>
+                     <span class="footer-cat">Solution</span>
+                 </div>
+                 <ul class="footer-cat-links">
+                     <li><a href=""><span>Interprise App Development</span></a></li>
+                     <li><a href=""><span>Android App Development</span></a></li>
+                     <li><a href=""><span>ios App Development</span></a></li>
+                 </ul>
+             </div>
+             <div class="col-3">
+                 <div class="link-cat" onclick="footerToggle(this)">
+                     <span class="footer-toggle"></span>
+                     <span class="footer-cat">Industries</span>
+                 </div>
+                 <ul class="footer-cat-links">
+                     <li><a href=""><span>Healthcare</span></a></li>
+                     <li><a href=""><span>Sports</span></a></li>
+                     <li><a href=""><span>ECommerce</span></a></li>
+                     <li><a href=""><span>Construction</span></a></li>
+                     <li><a href=""><span>Club</span></a></li>
+                 </ul>
+             </div>
+             <div class="col-3">
+                 <div class="link-cat" onclick="footerToggle(this)">
+                     <span class="footer-toggle"></span>
+                     <span class="footer-cat">Quick Links</span>
+                 </div>
+                 <ul class="footer-cat-links">
+                     <li><a href=""><span>Reviews</span></a></li>
+                     <li><a href=""><span>Terms & Condition</span></a></li>
+                     <li><a href=""><span>Disclaimer</span></a></li>
+                     <li><a href=""><span>Site Map</span></a></li>
+                 </ul>
+             </div>
+             <div class="col-3" id="newsletter">
+                 <span>Stay Connected</span>
+                 <form id="subscribe">
+                     <input type="email" id="subscriber-email" placeholder="Enter Email Address"/>
+                     <input type="submit" value="Subscribe" id="btn-scribe"/>
+                 </form>
+                 
+                 <div class="social-links social-2">
+                     <a href=""><i class="fab fa-facebook-f"></i></a>
+                     <a href=""><i class="fab fa-twitter"></i></a>
+                     <a href=""><i class="fab fa-linkedin-in"></i></a>
+                     <a href=""><i class="fab fa-instagram"></i></a>
+                     <a href=""><i class="fab fa-tumblr"></i></a>
+                     <a href=""><i class="fab fa-reddit-alien"></i></a>
+                 </div>
+ 
+                 <div id="address">
+                     <span>Office Location</span>
+                     <ul>
+                         <li>
+                             <i class="far fa-building"></i>
+                             <div>Los Angeles<br/>
+                             Office 9B, Sky High Tower, New A Ring Road, Los Angeles</div>
+                         </li>
+                         <!-- <li>
+                             <i class="fas fa-gopuram"></i>
+                             <div>Delhi<br/>
+                             Office 150B, Behind Sana Gate Char Bhuja Tower, Station Road, Delhi</div>
+                         </li>
+                     </ul>
+                 </div> -->
+                 
+             </div>
+             <div class="social-links social-1 col-6">
+                 <a href=""><i class="fab fa-facebook-f"></i></a>
+                 <a href=""><i class="fab fa-twitter"></i></a>
+                 <a href=""><i class="fab fa-linkedin-in"></i></a>
+                 <a href=""><i class="fab fa-instagram"></i></a>
+                 <a href=""><i class="fab fa-tumblr"></i></a>
+                 <a href=""><i class="fab fa-reddit-alien"></i></a>
+             </div>
+        </div>
+        <div id="copyright">
+            &copy; All Rights Reserved 2019-2020
+        </div>
+        <div id="owner">
+            <span>
+                Designed by <a href="https://www.codingtuting.com">CodingTuting.Com</a>
+            </span>
+        </div>
+     </footer>
+     <div class="col-md-12 col-lg-7 wow fadeInRight">
+        <div class="image-about up-down">
+            <img src="images/page/img-about.jpg" width="620" alt="Hamela">
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="StyleiTechFooter.js"></script>
+      <!-- Scripts -->
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+    
+</div>
+
+<!-- Jquery needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+<!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <script>
+        $(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+    </script>
+    <script>
+    $('.navTrigger').click(function () {
+        $(this).toggleClass('active');
+        console.log("Clicked menu");
+        $("#mainListDiv").toggleClass("show_list");
+        $("#mainListDiv").fadeIn();
+    
+    });
+</script>
+<script>
+    var galleryThumbs = new Swiper('.gallery-thumbs', {
+  effect: 'coverflow',
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: '2',
+  // coverflowEffect: {
+  //   rotate: 50,
+  //   stretch: 0,
+  //   depth: 100,
+  //   modifier: 1,
+  //   slideShadows : true,
+  // },
+  
+  coverflowEffect: {
+      rotate: 0,
+      stretch: 0,
+      depth: 50,
+      modifier: 6,
+      slideShadows : false,
+    },
+    
+});
+var galleryTop = new Swiper('.swiper-container.testimonial', {
+	speed: 400,
+	spaceBetween: 50,
+	autoplay: {
+	  delay: 3000,
+	  disableOnInteraction: false,
+	},
+	direction: 'vertical',
+	pagination: {
+	  clickable: true,
+	  el: '.swiper-pagination',
+	  type: 'bullets',
+	},
+	thumbs: {
+		swiper: galleryThumbs
+	  }
+  });
+</script>
+<script>
+    function updateSliderArrowsStatus(
+  cardsContainer,
+  containerWidth,
+  cardCount,
+  cardWidth
+) {
+  if (
+    $(cardsContainer).scrollLeft() + containerWidth <
+    cardCount * cardWidth + 15
+  ) {
+    $("#slide-right-container").addClass("active");
+  } else {
+    $("#slide-right-container").removeClass("active");
+  }
+  if ($(cardsContainer).scrollLeft() > 0) {
+    $("#slide-left-container").addClass("active");
+  } else {
+    $("#slide-left-container").removeClass("active");
+  }
+}
+$(function() {
+  // Scroll products' slider left/right
+  let div = $("#cards-container");
+  let cardCount = $(div)
+    .find(".cards")
+    .children(".card").length;
+  let speed = 1000;
+  let containerWidth = $(".container").width();
+  let cardWidth = 250;
+
+  updateSliderArrowsStatus(div, containerWidth, cardCount, cardWidth);
+
+  //Remove scrollbars
+  $("#slide-right-container").click(function(e) {
+    if ($(div).scrollLeft() + containerWidth < cardCount * cardWidth) {
+      $(div).animate(
+        {
+          scrollLeft: $(div).scrollLeft() + cardWidth
+        },
+        {
+          duration: speed,
+          complete: function() {
+            setTimeout(
+              updateSliderArrowsStatus(
+                div,
+                containerWidth,
+                cardCount,
+                cardWidth
+              ),
+              1005
+            );
+          }
+        }
+      );
+    }
+    updateSliderArrowsStatus(div, containerWidth, cardCount, cardWidth);
+  });
+  $("#slide-left-container").click(function(e) {
+    if ($(div).scrollLeft() + containerWidth > containerWidth) {
+      $(div).animate(
+        {
+          scrollLeft: "-=" + cardWidth
+        },
+        {
+          duration: speed,
+          complete: function() {
+            setTimeout(
+              updateSliderArrowsStatus(
+                div,
+                containerWidth,
+                cardCount,
+                cardWidth
+              ),
+              1005
+            );
+          }
+        }
+      );
+    }
+    updateSliderArrowsStatus(div, containerWidth, cardCount, cardWidth);
+  });
+
+  // If resize action ocurred then update the container width value
+  $(window).resize(function() {
+    try {
+      containerWidth = $("#cards-container").width();
+      updateSliderArrowsStatus(div, containerWidth, cardCount, cardWidth);
+    } catch (error) {
+      console.log(
+        `Error occured while trying to get updated slider container width: 
+            ${error}`
+      );
+    }
+  });
+});
+
+</script>
+<script>function footerToggle(footerBtn) {
+  $(footerBtn).toggleClass("btnActive");
+  $(footerBtn).next().toggleClass("active");
+}</script>
+<script>
+    //Change width and time on your desire
+
+initMarquee(190, 27)
+
+function initMarquee(boxWidth, time) {
+    const boxElement = $('.box');
+    const boxLength = boxElement.length;
+    const wrapperWidth = boxWidth * boxLength;
+    const windowWidth = $(window).width();
+
+    boxElement.parent().css('left', '-' + boxWidth + 'px');
+    boxElement.css('width', boxWidth + 'px');
+
+    gsap.set(".box", {
+        x: (i) => i * boxWidth
+    });
+
+    gsap.to(".box", {
+        duration: time,
+        ease: "none",
+        x: "-=" + wrapperWidth,
+        modifiers: {
+            x: gsap.utils.unitize(
+                function (x) {
+                    return parseFloat(x + windowWidth + boxWidth) % wrapperWidth
+                }
+            )
+        },
+        repeat: -1
+    });
+
+}
+</script>
+<script>
+    var bg = document.querySelector('.item-bg');
+var items = document.querySelectorAll('.news__item');
+var item = document.querySelector('.news__item');
+
+function cLog(content) {
+    console.log('content')
+}
+
+if($(window).width() > 800) {
+    $(document).on("mouseover", ".news__item", function (_event, _element) {
+
+        var newsItem = document.querySelectorAll('.news__item');
+        newsItem.forEach(function (element, index) {
+            element.addEventListener('mouseover', function () {
+                var x = this.getBoundingClientRect().left;
+                var y = this.getBoundingClientRect().top;
+                var width = this.getBoundingClientRect().width;
+                var height = this.getBoundingClientRect().height;
+
+                $('.item-bg').addClass('active');
+                $('.news__item').removeClass('active');
+                // $('.news__item').removeClass('active');
+
+
+                bg.style.width = width + 'px';
+                bg.style.height = height + 'px';
+                bg.style.transform = 'translateX(' + x + 'px ) translateY(' + y + 'px)';
+            });
+
+            element.addEventListener('mouseleave', function () {
+                $('.item-bg').removeClass('active');
+                $('.news__item').removeClass('active');
+            });
+
+        });
+
+    });
+}
+
+
+var swiper = new Swiper('.news-slider', {
+    effect: 'coverflow',
+    grabCursor: true,
+    loop: true,
+    centeredSlides: true,
+    keyboard: true,
+    spaceBetween: 0,
+    slidesPerView: 'auto',
+    speed: 300,
+    coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 0,
+        modifier: 3,
+        slideShadows: false
+    },
+    breakpoints: {
+        480: {
+            spaceBetween: 0,
+            centeredSlides: true
+        }
+    },
+    simulateTouch: true,
+    navigation: {
+        nextEl: '.news-slider-next',
+        prevEl: '.news-slider-prev'
+    },
+    pagination: {
+        el: '.news-slider__pagination',
+        clickable: true
+    },
+    on: {
+        init: function () {
+            var activeItem = document.querySelector('.swiper-slide-active');
+
+            var sliderItem = activeItem.querySelector('.news__item');
+
+            $('.swiper-slide-active .news__item').addClass('active');
+
+            var x = sliderItem.getBoundingClientRect().left;
+            var y = sliderItem.getBoundingClientRect().top;
+            var width = sliderItem.getBoundingClientRect().width;
+            var height = sliderItem.getBoundingClientRect().height;
+
+
+            $('.item-bg').addClass('active');
+
+            bg.style.width = width + 'px';
+            bg.style.height = height + 'px';
+            bg.style.transform = 'translateX(' + x + 'px ) translateY(' + y + 'px)';
+        }
+    }
+});
+
+swiper.on('touchEnd', function () {
+    $('.news__item').removeClass('active');
+    $('.swiper-slide-active .news__item').addClass('active');
+});
+
+swiper.on('slideChange', function () {
+    $('.news__item').removeClass('active');
+});
+
+swiper.on('slideChangeTransitionEnd', function () {
+    $('.news__item').removeClass('active');
+    var activeItem = document.querySelector('.swiper-slide-active');
+
+    var sliderItem = activeItem.querySelector('.news__item');
+
+    $('.swiper-slide-active .news__item').addClass('active');
+
+    var x = sliderItem.getBoundingClientRect().left;
+    var y = sliderItem.getBoundingClientRect().top;
+    var width = sliderItem.getBoundingClientRect().width;
+    var height = sliderItem.getBoundingClientRect().height;
+
+
+    $('.item-bg').addClass('active');
+
+    bg.style.width = width + 'px';
+    bg.style.height = height + 'px';
+    bg.style.transform = 'translateX(' + x + 'px ) translateY(' + y + 'px)';
+});
+
+
+
+</script>
+</body>
+</html>
